@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="mainScr">
+    <header>
+      <div class="scoBoard">
+        <h1>
+          ROCK <br>
+          PAPER <br>
+          SCISSORS
+        </h1>
+        <div class="disscore">
+          <div class="scoCount">
+            Computer <br>Score
+            <div class="scoComp">0</div>
+          </div>
+          <div class="scoCount">
+            Your <br>
+            Score
+            <div class="scoPlayer">0</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Playarea -->
+    <main>
+      <div class="playZone">
+        <div class="playZonea">
+          <div class="item" id="rock">
+            <img src="./images/rock.png" width="50%" height="35%" />
+          </div>
+          <div class="item" id="scissor">
+            <img src="./images/scissor.png"/>
+          </div>
+          <img id="line1" src="./images/Line 1.png"/>
+          <img id="line2" src="./images/Line 2.png"/>
+          <img id="line3" src="./images/Line 3.png"/>
+        </div>
+        <div class="playZoneb item" id="paper">
+          <img src="./images/paper.png" width="40%" height="40%" />
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="resZone">
+        <div class="side">
+          <div class="sideText">YOU PICKED</div>
+          <div class="userSideIcon">
+            <div class="sIcon" id="uRock">
+              <img src="./images/rock.png" width="40%" height="35%" />
+            </div>
+            <div class="sIcon" id="uScissor">
+              <img src="./images//scissor.png" />
+            </div>
+            <div class="sIcon" id="uPaper">
+              <img src="./images/paper.png" width="40%" height="40%" />
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="resultText" id="winText">YOU WON</div>
+          <div class="resultText" id="lostText">YOU LOST</div>
+          <div class="resultText" id="tieText">TIE UP</div>
+          <div class="subText">AGAINST PC</div>
+          <button class="playBtn">PLAY AGAIN</button>
+          <button class="replayBtn">REPLAY</button>
+        </div>
+        <div class="side">
+          <div class="sideText">PC PICKED</div>
+          <div class="pcSideIcon">
+            <div class="sIcon" id="pRock">
+              <img src="./images/rock.png" width="40%" height="35%" />
+            </div>
+            <div class="sIcon" id="pScissor">
+              <img src="./images//scissor.png" />
+            </div>
+            <div class="sIcon" id="pPaper">
+              <img src="./images/paper.png" width="40%" height="40%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="winScr">
+    <div class="trophy">
+      <img src="./images/Vector.png" alt="trophyimg" />
+      <img src="./images/Group 5.png" alt="stars" class="stars" />
+    </div>
+    <div class="hurrayMsg">HURRAY!!</div>
+    <div class="winMsg">YOU WON THE GAME</div>
+    <button class="winnerPlayBtn">PLAY AGAIN</button>
+  </div>
+
+  <!-- Rules -->
+  <div class="close">
+    <img src="./images/X.png" alt="close" width="50%" height="50%" />
+  </div>
+  <div class="rules">
+    <h4>Game Rules</h4>
+    <div class="rulesList">
+      <div>
+        <div class="yelPointer">🟨</div>
+        <div>
+          Rock beats scissors, scissors beat paper, and paper beats rock.
+        </div>
+      </div>
+      <div>
+        <div class="yelPointer" >🟨</div>
+        <div>
+          Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </div>
+      </div>
+      <div>
+        <div class="yelPointer">🟨</div>
+        <div>
+          Use rock, paper, scissors to settle minor decisions or simply play
+          to pass the time
+        </div>
+      </div>
+      <div>
+        <div class="yelPointer">🟨</div>
+        <div>
+          If both players lay down the same hand, each player lays down
+          another hand
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <button class="rulesBtn">RULES</button>
+    <button class="nextBtn">NEXT</button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
